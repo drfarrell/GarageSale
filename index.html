@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lonely Planet – Garage Sale App</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-75420258-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:776497,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <ul class="nav navbar-nav navbar-left pull-left">
+            <li><a href="http://drfarrell.github.io"><strong>Daniel R Farrell</strong></a></li>
+          </ul>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar" id="gone"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://drfarrell.github.io/Resume/DRFarrell_Resume.pdf">Resume</a></li>
+            <li><a href="http://drfarrell.github.io/Contact/">Contact</a></li>
+            <li><a href="http://drfarrell.github.io/#anchor">Work</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="descriptor">
+        <h1>Garage Sale App</h1>
+        <h2>Lonely Planet - Product Design Challenge</h2>
+      </div>
+    </div>
+  </div>
+  <div class="project">
+    <div class="br"></div>
+    <div class="container">
+      <div class="row">
+        <div class="overview">
+          <div class="col-md-6">
+            <h3>Abstract</h3>
+            <p>Tasked with designing an experience that makes it easier for garage sale sellers to intelligently inventory their goods, and bargain hunters to find the needle in a haystack, I designed the core foundation for a lightweight, visually simple app that would scale design patterns well while maintaining legibility and a diversity of options to move forward with.</p>
+          </div>
+          <div class="col-md-6" id="quote">
+            <h3><br></h3>
+            <h2><i>“The goal of a garage sale is to get rid of as much stuff as possible while earning back some of the value of your items”</i></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="commentary">
+      </div>
+      <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="col-md-6">
+            <h5>Conceptual brain-dump to begin to explore the scope</h5>
+            <h6>Writing down thoughts in a semi-partitioned way helps prioritize and identify high-impact opportunities for design.</h6>
+        </div>
+        <div class="col-md-6">
+          <div class="read-more" onclick="this.classList.add('expanded')">
+            <div class="content">
+              <p>
+                <br>
+                I generally start my process out by jotting down notes, ideas, and inspiration to solidify higher level concepts and open up room for new approaches. My general goal with design is to solve for as many opportunities as possible while laying the foundation for more features to come in the life of the product, so I took the two sides of the prompt and broke them into how might we? (HMW) statements to begin identifying questions I could try to answer with UX/UI implementation. A good design solution will answer as many of these questions as it can. On the right side of my notes, you’ll see I wrote out a couple of research points and opportunities to start to wrap my mind around both the problem, as well as potential places of inspiration all the way from vaguely similar to wildly different app interfaces.
+              </p>
+            </div>
+            <span class="trigger">+ Read more</span>
+          </div>
+        </div>
+      </div>
+      <img src="Images/Notes.jpg">
+    </div>
+    <div class="container">
+      <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="col-md-6">
+            <h5>Bouncing assumptions off of someone to validate ideas</h5>
+            <h6>I called up a friend to get a fresh perspective on the challenge and weigh the real value of some of the opportunities I was exploring.</h6>
+        </div>
+        <div class="col-md-6">
+          <div class="read-more" onclick="this.classList.add('expanded')">
+            <div class="content">
+              <p>
+                <br>
+                I find that I do my most effective work when I can verbally discuss concepts, assumptions, and problems with someone else, especially if they’re not a designer. A quick 15 minute call with my friend Grace brought up some great points from both the buyer and seller perspective, as she reminded me of a couple of key components of a garage sale. First, garage sales are very casual. We discussed how the primary goal of a garage sale is to get rid of stuff, and maybe make a little extra cash off of what a seller is trying to get rid of. “If you wanted to actually make a profit off of something, you’d have better luck on craigslist” Grace told me, drawing the boundary between what a craiglist experience is vs. a real garage sale experience. Second, the fidelity of an item post needs to cater to just how much work the seller wants to put into selling an item. Some users will be fanatic about every detail, while others will have too much stuff to properly inventory it all. Third, cataloguing every item is extremely tedious, and a lot of times there is varying scope in how someone is trying to sell something. It’s not infrequent to see people just toss things in a box with a price tag on the outside so they’re not taking explicit inventory of it all. Whatever inventory interface I design will have to accommodate for the varying levels of commitment to the process on the seller side.
+              </p>
+            </div>
+            <span class="trigger">+ Read more</span>
+          </div>
+        </div>
+      </div>
+      <img src="Images/InterviewGrace.jpg">
+    </div>
+    <div class="container">
+      <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="col-md-6">
+            <h5>How have others solved these problems?</h5>
+            <h6>What do garage sale experts (garage salers?) do to ensure success, and what existing design patterns could help facilitate a marketplace.</h6>
+        </div>
+        <div class="col-md-6">
+          <div class="read-more" onclick="this.classList.add('expanded')">
+            <div class="content">
+              <p>
+                <br>
+                My initial search on Google confirmed most of the assumptions I was making on how people categorize and price things: depending on how dedicated the experts are to a particular niche of items, there are a handful of strategies they use to simplify or highlight items. A lot of the guides talked about more of the physical implementation of the garage sale that may be outside of a strong value-add for an app, but there were still some great points about how people should approach pricing with respect to the expectation of bartering, as well as addressing the cognitive overhead of keeping track of items when the goal is largely to get rid of things that take up space. On the product side, I put together a <a href="https://dribbble.com/D_R_Farrell/buckets/728635-Garage-Sale" target="_blank">Dribbble bucket</a> of visual and UX options that I liked, and placed the options into a large artboard alongside some screenshots of apps I have on my phone to identify patterns I could use. When I go through inspiration I try to point-out features or styles that are functionally or visually interesting and may lend themselves to unique UX patterns that are still intuitive and engaging.
+              </p>
+            </div>
+            <span class="trigger">+ Read more</span>
+          </div>
+        </div>
+      </div>
+      <img src="Images/Webpages.png">
+      <img src="Images/Inspiration.png">
+    </div>
+    <div class="container">
+      <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="col-md-6">
+            <h5>The foundation for a scalable and unique app flow</h5>
+            <h6>Ultra-low fidelity sketching is a great way to test a variety of patterns against one-another while weighing the weaknesses, opportunities and relationships of certain combos.</h6>
+        </div>
+        <div class="col-md-6">
+          <div class="read-more" onclick="this.classList.add('expanded')">
+            <div class="content">
+              <p>
+                <br>
+                Applying the research above, I used one of my favorite techniques of mashing-up components on a piece of paper to see how they interact as a system. After rapidly sketching a handful of ideas, I go back and annotate what seemed to work and what didn’t, sometimes with an “X” next to a spot that will cause a dead-end in the product or a check to highlight a positive advantage or feature. It was important to me to isolate the key patterns for the home screen in this process to be confident in the root of the app and how it would expand from there.
+              </p>
+            </div>
+            <span class="trigger">+ Read more</span>
+          </div>
+        </div>
+      </div>
+      <img src="Images/Mockups1.jpg">
+      <img src="Images/Mockups2.jpg">
+    </div>
+    <div class="container">
+      <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="col-md-6">
+            <h5>The buyer and the seller</h5>
+            <h6>I addressed two starting steps of both sides: The buyer’s discovery process, and the seller’s posting process. </h6>
+        </div>
+        <div class="col-md-6">
+          <div class="read-more" onclick="this.classList.add('expanded')">
+            <div class="content">
+              <p>
+                <br>
+                Large cards let the user quickly get a glance of the available categories at this location and just how many items are available, and a simple navigation bar sets the expectation for what options and styles are going to propagate through the interface. Below you’ll find the general flow of the interface from a high level without annotations, followed by a breakdown of the homepage, two screens from the buyer’s perspective after they tap on a category and then explore an item, and two screens from the seller’s perspective as they go through the first step of adding an item, and then the second step of filling-out item posting details.
+              </p>
+            </div>
+            <span class="trigger">+ Read more</span>
+          </div>
+        </div>
+      </div>
+      <img src="Images/FullDesign.png">
+      <img src="Images/Homepage.png">
+      <img src="Images/Buyer.png">
+      <img src="Images/Seller.png">
+    </div>
+    <div class="commentary">
+        <h5>Feedback from three users</h5>
+        <p>
+          <br>
+          On the <strong>Home Page</strong>:
+          <br>"What's the whitespace for? I feel like something should be there."
+          <br>"If I were to look for something to buy, I'd like to get a sense that there is stuff there. Either making the quantity number bigger or using photos of the items may help show that."
+          <br><br>
+          On the <strong>Add an Item Flow</strong>:
+          <br>"It totally makes sense to have these two buttons [to start]... Feels like it'll be quick."
+          <br>"This is super intuitive. I REALLY like this. I have to sell a couch pretty soon and it feels like this would be so simple to post with."
+          <br>"This feels so lightweight that you probably don't even need a save button. Why would you save it when it's just so quick?"
+          <br><br>
+          On the <strong>Product Page</strong>:
+          <br>"Views and favorites are cool. It feels like this is active and that I should get going if I want this."
+        </p>
+    </div>
+  <div class="commentary">
+      <h5>Reflections</h5>
+      <p>
+        <br>
+        I used the challenge as way to test out some new visual styles I’ve been looking into, largely with respect to maximizing whitespace, as well an opportunity to experiment with non-tab bar navigation. I’m satisfied with the visual result but, as with every design, there is still room for improvement. After hooking-up the prototype and walking through some friends through the app on my phone, they actually preferred to see more photos throughout the start. My initial intention was to bucket interests for potential buyers to explore, but it turns out that the Instagram generation prefers large, pretty pictures. Maybe interviewing an older user would reveal a different piece of feedback on the category section, but it was interesting that one of my users suggested large, big numbers on the quantities where I had that drawn up in one of the mockups above. <br><br>
+
+        Outside of that point, next steps would be to build out a bit more functionality to cover the unaddressed features of the visual prototype (via more research and wireframing), then run tests with target customers and the wired-up prototype onsite with real photos of items for sale to see how people really would use an app like this. <br><br>
+
+        In terms of my general approach on this project, rendering assets for the case study took a lot longer than I had anticipated, but I think they add strong value for remotely viewing the work. The visual work was extremely fun to experiment with, and I really liked the font and color-combos that came out of this exploration.
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="nextproject">
+    <div class="container">
+      <div class="row" id="bottom">
+        <a href="https://drfarrell.github.io/#anchor">
+          <div class="col-md-6 pull-left"><h3><span class="glyphicon glyphicon-triangle-left"></span>Go Back To</h3><br><h2>Portfolio</h2></div>
+        </a>
+        <a href="https://drfarrell.github.io/GoFire/">
+          <div class="col-md-6 pull-right"><h3>Next Project<span class="glyphicon glyphicon-triangle-right"></span></h3><br><h2>GoFire</h2></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+    <div class="container">
+      <h4>Copyright Daniel R Farrell 2018 · Handcoded in Colorado</h4>
+    </div>
+  </footer>
+</body>
+</html>
